@@ -17,7 +17,7 @@ int main(int ac, char **av)
 	}
 	while (1)
 	{
-		printf("Shell_$ ");
+		write(STDOUT_FILENO, "Shell_$ ", 9);
 		readGet = read_line();
 		tokenizer = strtoken(readGet);
 		executeShell = executer(tokenizer);
