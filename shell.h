@@ -8,20 +8,17 @@
 #include <sys/wait.h>
 #include <sys/types.h>
 
-char *read_line(void);
-char **strtoken(char *string);
+/* FUNCTIONS PROTOTYPES*/
+void end_of_file(char *buffer);
 char **executer(char **array);
 void free_grid(char **string);
-
-void end_of_file(char *buffer);
-
-unsigned int _strlen(char *str);
-void get_out(char **array);
-
 void free_all(char **ptr);
 void null_array(char **buffer);
-
-int _strcmp(char *s1, char *s2);
+void get_out(char **array);
+char *read_line();
+unsigned int _strlen(char *str);
 char *_strncpy(char *dest, char *src, int n);
+int _strcmp(char *s1, char *s2);
+char **strtoken(char *string);
 
 #endif

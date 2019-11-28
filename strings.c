@@ -1,5 +1,4 @@
 #include "shell.h"
-
 /**
 *_strlen - get the length of string
 *@str: string
@@ -14,7 +13,6 @@ unsigned int _strlen(char *str)
 
 	return (i);
 }
-
 /**
 *_strncpy - copy string
 *@dest: string
@@ -34,8 +32,6 @@ char *_strncpy(char *dest, char *src, int n)
 
 	return (dest);
 }
-
-
 /**
 *_strcmp - compare two strings
 *@s1: string

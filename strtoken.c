@@ -1,14 +1,9 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 #include "shell.h"
-
 /**
  * strtoken - tokenize stdin
  * @string: stdin
  * Return: array of tokens
  */
-
 char **strtoken(char *string)
 {
 char *token;
@@ -19,7 +14,6 @@ if (array == NULL)
 	return (NULL);
 
 token = strtok(string, " \n");
-/*token = strtok(e, "=");*/
 while (token)
 {
 	array[i] = malloc(_strlen(token) + 1);
@@ -28,10 +22,7 @@ while (token)
 		free_all(array);
 		return (NULL);
 	}
-
-	/*array[i] = token;*/
 	_strncpy(array[i], token, _strlen(token) + 1);
-	/*printf("%s\n", token);*/
 	token = strtok(NULL, " \n");
 	i++;
 }

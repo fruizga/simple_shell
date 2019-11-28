@@ -1,10 +1,8 @@
 #include "shell.h"
-
 /**
  * free_all - free all and double pointers
  * @ptr: pointer to free
  */
-
 void free_all(char **ptr)
 {
 	unsigned int i = 0;
@@ -25,7 +23,7 @@ void free_all(char **ptr)
 
 
 /**
- * null_array - if array o tokens is null
+ * null_array - if array o tokens are null
  * @buffer: buffer to free
  */
 void null_array(char **buffer)

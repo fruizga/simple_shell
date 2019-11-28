@@ -12,4 +12,3 @@ void end_of_file(char *buffer)
 	free(buffer);
 
 }
-

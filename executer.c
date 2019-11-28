@@ -1,23 +1,13 @@
-#include <stdio.h>
-#include <unistd.h>
-#include <stdlib.h>
-#include <string.h>
-#include <sys/wait.h>
-#include <sys/types.h>
 #include "shell.h"
-
 /**
  * executer - execute comands
  * @array: array of tokens
  * Return: 0
  */
-
 char **executer(char **array)
 {
 pid_t child;
 int status;
-
-
 
 if (array == NULL)
 {

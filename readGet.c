@@ -1,8 +1,4 @@
-#include <stdio.h>
-#include <unistd.h>
-#include <stdlib.h>
 #include "shell.h"
-
 /**
  * read_line - read the stdin
  * Return: string of character typed
@@ -10,7 +6,7 @@
 
 char *read_line()
 {
-	signed int bytes_read = 0;
+signed int bytes_read = 0;
 size_t size = 0;
 char *string = NULL;
 string = (char *) malloc(size);
@@ -25,7 +21,5 @@ bytes_read = getline(&string, &size, stdin);
 		perror("Error");
 		exit(0);
 	}
-
-
 return (string);
 }

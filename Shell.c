@@ -1,6 +1,3 @@
-#include <stdio.h>
-#include <unistd.h>
-#include <stdlib.h>
 #include "shell.h"
 
 /**
@@ -20,12 +17,11 @@ int main(int ac, char **av)
 	}
 	while (1)
 	{
-		printf("$ ");
+		printf("Shell_$ ");
 		readGet = read_line();
 		tokenizer = strtoken(readGet);
-		/*free(readGet);*/
 		executeShell = executer(tokenizer);
-		/*free(tokenizer);*/
+
 	}
 free(readGet);
 free(tokenizer);
