@@ -79,7 +79,7 @@ $ /bin/ls -la
 
 .SH SEE ALSO
 
-.R dash(3) dash
+.R dash(1) dash
 
 .SH BUGS
 
