@@ -17,11 +17,11 @@ int main(int ac, char **av)
 	}
 	while (1)
 	{
+		signal(SIGINT, signalHandler);
 		write(STDOUT_FILENO, "Shell_$ ", 9);
 		readGet = read_line();
 		tokenizer = strtoken(readGet);
 		executeShell = executer(tokenizer);
-
 	}
 free(readGet);
 free(tokenizer);

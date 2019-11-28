@@ -16,6 +16,7 @@ void free_all(char **ptr);
 void null_array(char **buffer);
 void get_out(char **array);
 char *read_line();
+void signalHandler(int sigHand);
 unsigned int _strlen(char *str);
 char *_strncpy(char *dest, char *src, int n);
 int _strcmp(char *s1, char *s2);
