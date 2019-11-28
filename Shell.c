@@ -3,12 +3,20 @@
 #include <stdlib.h>
 #include "shell.h"
 
+/**
+ * main - function to start the shell project
+ * @ac: argument counter
+ * @av: argument array
+ * Return: ac
+ */
+
 int main(int ac, char **av)
 {
 	char *readGet, **tokenizer, **executeShell;
+
 	if (av == NULL)
 	{
-		return('\0');
+		return ('\0');
 	}
 	while (1)
 	{

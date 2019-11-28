@@ -1,8 +1,9 @@
 #include "shell.h"
 
 /**
-*string length counter
-*
+*_strlen - get the length of string
+*@str: string
+*Return: number of characters
 */
 unsigned int _strlen(char *str)
 {
@@ -15,9 +16,12 @@ unsigned int _strlen(char *str)
 }
 
 /**
- * string copy
- * 
- * */
+*_strncpy - copy string
+*@dest: string
+*@src: second string
+*@n: number of bytes
+*Return: number of characters
+*/
 char *_strncpy(char *dest, char *src, int n)
 {
 	int i;
@@ -31,6 +35,13 @@ char *_strncpy(char *dest, char *src, int n)
 	return (dest);
 }
 
+
+/**
+*_strcmp - compare two strings
+*@s1: string
+*@s2: string2
+*Return: result of comparision
+*/
 int _strcmp(char *s1, char *s2)
 {
 	unsigned int i = 0;

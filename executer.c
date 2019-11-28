@@ -6,6 +6,12 @@
 #include <sys/types.h>
 #include "shell.h"
 
+/**
+ * executer - execute comands
+ * @array: array of tokens
+ * Return: 0
+ */
+
 char **executer(char **array)
 {
 pid_t child;
@@ -19,13 +25,13 @@ if (array == NULL)
 }
 
 else if (_strcmp("exit", array[0]))
-		get_out(array);
+	get_out(array);
 
 child = fork();
 
 if (child == 0)
 {
-	
+
 	if (execve(array[0], array, NULL) == -1)
 	{
 		perror("Error: ");
