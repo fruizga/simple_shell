@@ -18,7 +18,7 @@ int main(int ac, char **av)
 	while (1)
 	{
 		signal(SIGINT, signalHandler);
-		write(STDOUT_FILENO, "Shell_$ ", 9);
+		/* write(STDOUT_FILENO,, 9); */
 		readGet = read_line();
 		tokenizer = strtoken(readGet);
 		executeShell = executer(tokenizer);
