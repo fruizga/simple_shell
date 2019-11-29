@@ -17,7 +17,8 @@ int main(int ac, char **av)
 	}
 	while (1)
 	{
-		signal(SIGINT, signalHandler);
+		printerPrompt();
+		//signal(SIGINT, signalHandler);
 		/* write(STDOUT_FILENO,, 9); */
 		readGet = read_line();
 		tokenizer = strtoken(readGet);
