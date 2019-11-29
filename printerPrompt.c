@@ -1,6 +1,6 @@
 #include "shell.h"
 /**
- * printerPrompt - This program prints the prompt if the
+ * printerPrompt - This program prints the prompt only if the
  * shell is in interactive mode
  *
  * Return: void

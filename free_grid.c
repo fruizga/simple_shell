@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * free_grid - free memory
+ * free_grid - free memory double pointers
  * @string: double pointer to free
  */
 

@@ -1,6 +1,6 @@
 #include "shell.h"
 /**
- * executer - execute comands
+ * executer - execute comand in  the shells
  * @array: array of tokens
  * Return: 0
  */
